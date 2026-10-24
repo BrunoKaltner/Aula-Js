@@ -81,11 +81,11 @@
 //     console.log(texto);
 // }
 
-for (let linha = 1; linha <= 4; linha++) {
-    let texto = "";
+// for (let linha = 1; linha <= 4; linha++) {
+//     let texto = "";
 
-    for (let coluna = 1; coluna <= linha; coluna++) {
-        texto += "* "
-    }
-    console.log(texto)
-}
+//     for (let coluna = 1; coluna <= linha; coluna++) {
+//         texto += "* "
+//     }
+//     console.log(texto)
+// }
