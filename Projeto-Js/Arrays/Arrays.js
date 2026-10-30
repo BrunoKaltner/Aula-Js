@@ -91,76 +91,76 @@
 
 //FILTER 
 
-console.log("=== FILTER ===");
+// console.log("=== FILTER ===");
 
-const lucas = { name: "Lucas", lastName: "Garcez", age: 20 };
-const maria = { name: "Maria", lastName: "Oliveira", age: 17 };
-const joao = { name: "João", lastName: "Silva", age: 18 };
-const ana = { name: "Ana", lastName: "Santos", age: 22 };
+// const lucas = { name: "Lucas", lastName: "Garcez", age: 20 };
+// const maria = { name: "Maria", lastName: "Oliveira", age: 17 };
+// const joao = { name: "João", lastName: "Silva", age: 18 };
+// const ana = { name: "Ana", lastName: "Santos", age: 22 };
 
-const people = [lucas, maria, joao, ana];
+// const people = [lucas, maria, joao, ana];
 
-const maiores = people.filter((value, index, array) => {
-    console.log("Index", index);
-    console.log("Value", value.name);
-    console.log("------------------");
-    return value.age >= 18;
+// const maiores = people.filter((value, index, array) => {
+//     console.log("Index", index);
+//     console.log("Value", value.name);
+//     console.log("------------------");
+//     return value.age >= 18;
 
-});
+// });
 
-console.log("Resultado filter:", maiores);
-
-
-console.log("===== MAP ======");
-
-const nomes = people.map((value, index, array) => {
-    console.log("Index", index);
-    console.log("Value", value.name);
-
-    return value.name;
-});
-
-console.log("Resultado map:", nomes);
+// console.log("Resultado filter:", maiores);
 
 
-console.log("===== FIND =====");
-const mariaEncontrada = people.find((value, index, array) => {
-    console.log("Index", index);
-    console.log("Value", value.name);
-    return value.name === "Maria";
-});
+// console.log("===== MAP ======");
 
-console.log("Resultado find:", mariaEncontrada);
+// const nomes = people.map((value, index, array) => {
+//     console.log("Index", index);
+//     console.log("Value", value.name);
 
-const pedro = people.find(p => p.name === "Pedro");
-console.log(pedro);
-if (pedro === undefined) {
-    console.log("Pessoa não encontrada");
-}
+//     return value.name;
+// });
+
+// console.log("Resultado map:", nomes);
 
 
-console.log(" ===== Reduce =====");
+// console.log("===== FIND =====");
+// const mariaEncontrada = people.find((value, index, array) => {
+//     console.log("Index", index);
+//     console.log("Value", value.name);
+//     return value.name === "Maria";
+// });
 
-// array.reduce((acumulador, elementoAtual, indice, arrayOriginal) => {
+// console.log("Resultado find:", mariaEncontrada);
 
-// }, valorInicial);
+// const pedro = people.find(p => p.name === "Pedro");
+// console.log(pedro);
+// if (pedro === undefined) {
+//     console.log("Pessoa não encontrada");
+// }
 
-const somaIdades = people.reduce((acc, value, index, array) => {
-    console.log("Index:", index);
-    console.log("Value:", value.name, value.age);
-    console.log("Acumulador antes:", acc)
-    return acc + value.age
-}, 0);
-console.log("Resultador reduce:", somaIdades);
 
-const nomesMaiores = people
-.filter(p => p.age >= 18)
-.map(p => p.name.toUpperCase());
+// console.log(" ===== Reduce =====");
 
-console.log(nomesMaiores);
+// // array.reduce((acumulador, elementoAtual, indice, arrayOriginal) => {
 
-const somarMaiores = people
-.filter(p => p.age >= 18)
-.reduce((acc, p) => acc + p.age, 0);
+// // }, valorInicial);
 
-console.log(somarMaiores)
+// const somaIdades = people.reduce((acc, value, index, array) => {
+//     console.log("Index:", index);
+//     console.log("Value:", value.name, value.age);
+//     console.log("Acumulador antes:", acc)
+//     return acc + value.age
+// }, 0);
+// console.log("Resultador reduce:", somaIdades);
+
+// const nomesMaiores = people
+// .filter(p => p.age >= 18)
+// .map(p => p.name.toUpperCase());
+
+// console.log(nomesMaiores);
+
+// const somarMaiores = people
+// .filter(p => p.age >= 18)
+// .reduce((acc, p) => acc + p.age, 0);
+
+// console.log(somarMaiores)
